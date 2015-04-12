@@ -72,6 +72,10 @@ class Signup( handler.Handler ):
                          timezones=pytz.common_timezones )
 
     def post( self ):
+        # Disable signups for now
+        self.error( 403 )
+        self.render( "403.html" )
+        return
         user = self.get_user( )
         if user == self.OVER_QUOTA_ERROR:
             self.error( 403 )
