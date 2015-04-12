@@ -47,6 +47,8 @@ class Handler(webapp2.RequestHandler):
     def render_json( self, obj ):
         self.response.headers[ 'Content-Type' ] = ( 'application/json; ' 
                                                     + 'charset=UTF-8' )
+        self.response.headers[ "Access-Control-Allow-Origin" ] = ("*")
+
         # Allow javascript from any domain to access the JSON
 #        self.response.headers.add_header( 'Access-Control-Allow-Origin', '*' )
         self.write( json.dumps( obj, cls = util.MyJSONEncoder ) )
