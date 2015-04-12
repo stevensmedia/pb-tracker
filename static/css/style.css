@@ -46,8 +46,8 @@ a > i:hover {
 
 .jumbotron {
     color: white;
-    background: #DD4814;
-    background: linear-gradient(20deg, #BB380C 30%, #DD4814 60%, #FF581C 100%);
+    background: #0171ef;
+    background: linear-gradient(20deg, #0171ef 30%, #39beff 60%, #eef2f8 100%);
 }
 
 /* datatables.net */
@@ -56,5 +56,5 @@ a > i:hover {
 }
 
 .sorting_asc, .sorting_desc {
-    background-color: #fcf8e3; /* This is the "warning" color for United */
+    background: #ffe7a5;
 }
